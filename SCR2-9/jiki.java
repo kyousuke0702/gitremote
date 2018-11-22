@@ -15,5 +15,18 @@ public class jiki extends Actor
     public void act() 
     {
         // Add your action code here.
-    }    
+        if(Greenfoot.isKeyDown( "down" )){
+            setRotation(90);
+            move(10);
+    }
+    else  if(Greenfoot.isKeyDown( "left" )){
+            setRotation(180);
+            move(4);
+    }  
+    
+     else  if(Greenfoot.isKeyDown( "right" )){
+            setRotation(0);
+            move(5);
+    }  
+}
 }
