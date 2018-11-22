@@ -1,23 +1,24 @@
-#Greenfoot project file
-class.Myworld.superclass=greenfoot.World
-mainWindow.height=546
-mainWindow.width=854
-mainWindow.x=624
-mainWindow.y=249
-package.numDependencies=0
-package.numTargets=1
+#Greenfoot properties
+#Thu Nov 22 11:11:52 JST 2018
+target1.editor.x=105
+target1.type=ClassTarget
 project.charset=UTF-8
+mainWindow.height=546
+version=2.7.1
+target1.typeParameters=
+world.lastInstantiated=Myworld
+target1.height=50
+mainWindow.y=249
+target1.width=80
+mainWindow.x=624
 target1.editor.height=700
 target1.editor.width=900
-target1.editor.x=105
-target1.editor.y=72
-target1.height=50
+package.numDependencies=0
+target1.y=10
+target1.x=70
+mainWindow.width=854
+package.numTargets=1
 target1.name=Myworld
 target1.showInterface=false
-target1.type=ClassTarget
-target1.typeParameters=
-target1.width=80
-target1.x=70
-target1.y=10
-version=2.7.1
-world.lastInstantiated=Myworld
+class.Myworld.superclass=greenfoot.World
+target1.editor.y=72
