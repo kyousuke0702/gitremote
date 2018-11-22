@@ -1,5 +1,10 @@
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=a9c51ce6f698f591541b9b127edc621c9fae14a1
 class.Myworld.superclass=greenfoot.World
+class.Pizza.image=hamburger.png
+class.Pizza.superclass=greenfoot.Actor
 class.enemy.image=tux.png
 class.enemy.superclass=greenfoot.Actor
 class.jiki.image=ppl2.png
@@ -12,9 +17,15 @@ dependency2.to=jiki
 dependency2.type=UsesDependency
 mainWindow.height=546
 mainWindow.width=854
+<<<<<<< HEAD
 mainWindow.x=1003
 mainWindow.y=397
 package.numDependencies=2
+=======
+mainWindow.x=969
+mainWindow.y=351
+package.numDependencies=1
+>>>>>>> 9eeeeaa8fd3d2c815eef3b95a2cd2a7148421921
 package.numTargets=3
 project.charset=UTF-8
 target1.editor.height=700
@@ -22,12 +33,13 @@ target1.editor.width=900
 target1.editor.x=904
 target1.editor.y=219
 target1.height=50
-target1.name=enemy
+target1.name=Pizza
 target1.naviview.expanded=false
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=80
+<<<<<<< HEAD
 target1.x=160
 target1.y=10
 target2.editor.height=700
@@ -36,17 +48,36 @@ target2.editor.x=105
 target2.editor.y=44
 target2.height=50
 target2.name=jiki
+=======
+target1.x=70
+target1.y=70
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=904
+target2.editor.y=191
+target2.height=50
+target2.name=enemy
+>>>>>>> 9eeeeaa8fd3d2c815eef3b95a2cd2a7148421921
 target2.naviview.expanded=false
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
+<<<<<<< HEAD
 target2.x=70
 target2.y=70
 target3.editor.height=719
 target3.editor.width=900
 target3.editor.x=687
 target3.editor.y=255
+=======
+target2.x=160
+target2.y=10
+target3.editor.height=719
+target3.editor.width=900
+target3.editor.x=922
+target3.editor.y=52
+>>>>>>> 9eeeeaa8fd3d2c815eef3b95a2cd2a7148421921
 target3.height=50
 target3.name=Myworld
 target3.naviview.expanded=false
