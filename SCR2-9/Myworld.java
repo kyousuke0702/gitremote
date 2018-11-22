@@ -21,6 +21,8 @@ public class Myworld extends World
         addObject(new enemy(),500,350);
         addObject(new enemy(),500,200);
         addObject(new enemy(),500,40);
-      
+        addObject(new Pizza(),0,350);
+        addObject(new Pizza(),0,200);
+        addObject(new Pizza(),0,40);
     }
 }
