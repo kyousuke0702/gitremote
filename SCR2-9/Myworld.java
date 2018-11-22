@@ -21,10 +21,8 @@ public class Myworld extends World
         addObject(new enemy(),500,350);
         addObject(new enemy(),500,200);
         addObject(new enemy(),500,40);
-<<<<<<< HEAD
-=======
 
->>>>>>> 0684d0f6050f905a85a0e08accb8c43eeff09d90
+
         addObject(new Pizza(),0,350);
         addObject(new Pizza(),0,200);
         addObject(new Pizza(),0,40);
@@ -33,10 +31,7 @@ public class Myworld extends World
     }
     
     public void score(int sc){
-<<<<<<< HEAD
-=======
-        
 
->>>>>>> 0684d0f6050f905a85a0e08accb8c43eeff09d90
+        
     }
 }
