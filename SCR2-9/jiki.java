@@ -26,29 +26,22 @@ public class jiki extends Actor
             move(n);
         
         }
-        // Add your action code here.
+        
         if(Greenfoot.isKeyDown( "down" )){
             setRotation(90);
-<<<<<<< HEAD
-            move(10);
-    }
-    else  if(Greenfoot.isKeyDown( "left" )){
+            move(n);
+        }
+        if(Greenfoot.isKeyDown( "left" )){
             setRotation(180);
-            move(4);
-    }  
+            move(n);
+        }  
     
-     else  if(Greenfoot.isKeyDown( "right" )){
+        if(Greenfoot.isKeyDown( "right" )){
             setRotation(0);
-            move(5);
-    }  
-}
-=======
             move(n);
-    }
-    else  if(Greenfoot.isKeyDown( "left" )){
-            setRotation(180);
-            move(n);
-    }
-    }    
->>>>>>> 854241497361791e7e05def1a2b734c64337cdd1
+        }  
 }
+          
+    
+        }
+   
