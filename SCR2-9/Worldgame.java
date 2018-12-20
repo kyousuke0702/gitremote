@@ -1,19 +1,19 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Myworld here.
+ * Write a description of class Worldgame here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Myworld extends World
+public class Worldgame extends World
 {
 
     /**
-     * Constructor for objects of class Myworld.
+     * Constructor for objects of class Worldgame.
      * 
      */
-    public Myworld()
+    public Worldgame()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
@@ -28,10 +28,5 @@ public class Myworld extends World
         addObject(new Pizza(),0,40);
 
         addObject(new jiki() ,300,200);
-    }
-    
-    public void score(int sc){
-
-        
     }
 }
