@@ -13,6 +13,8 @@ public class Worldgame extends World
      * Constructor for objects of class Worldgame.
      * 
      */
+    int show = 150;
+    
     public Worldgame()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -28,5 +30,24 @@ public class Worldgame extends World
         addObject(new Pizza(),0,40);
 
         addObject(new jiki() ,300,200);
+        
+ 
+        
+    }
+    
+    
+        public void act()
+    {
+        
+       if(show != 0){
+            showText("←↓↑→　and  'z' key ",300,100);
+            show--;
+        }else{
+            showText("",300,100);
+        }
+  
+
+    
+
     }
 }

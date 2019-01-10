@@ -44,7 +44,14 @@ public class ballet extends Actor
     
     if( getX() > 590 || getX() < 10  || getY() > 390 || getY() < 10){
         getWorld().removeObject( this );
-    }
+    }else 
+    {
+    Actor actor = getOneObjectAtOffset( 0, 0, enemy.class );
+    if( actor != null ){
+        getWorld().removeObject( actor ); 
+        getWorld().removeObject( this );
+    }   
+}
     
     }
 }
