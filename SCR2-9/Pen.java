@@ -1,15 +1,15 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Pizza here.
+ * Write a description of class Pen here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pizza extends enemy
+public class Pen extends enemy
 {
     /**
-     * Act - do whatever the Pizza wants to do. This method is called whenever
+     * Act - do whatever the Pen wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
