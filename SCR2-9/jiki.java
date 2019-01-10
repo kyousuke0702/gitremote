@@ -39,7 +39,12 @@ public class jiki extends Actor
         if(Greenfoot.isKeyDown( "right" )){
             setRotation(0);
             move(n);
-        }  
+        }
+        
+        if(Greenfoot.isKeyDown( "z" )){
+            getWorld().addObject( new ballet(), getX(), getY() );
+            
+        } 
 }
           
     
