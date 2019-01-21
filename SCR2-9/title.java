@@ -20,7 +20,7 @@ public class title extends World
         
         showText("Push 'space' key",300,180);
         
-        showText("ここにタイトルを入れる",300,100);
+        showText("火鉢",300,100);
         
     }
     
@@ -30,11 +30,8 @@ public class title extends World
         World game = new Worldgame();
         Greenfoot.setWorld( game );
     }
-  
-
-    
-
     }
+  
     
     
 }

@@ -14,6 +14,6 @@ public class Pizza extends enemy
      */
     public void act() 
     {
-        // Add your action code here.
+
     }    
 }

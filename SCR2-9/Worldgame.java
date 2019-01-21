@@ -20,16 +20,10 @@ public class Worldgame extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
                 
-        addObject(new Pen(),500,350);
-        addObject(new Pen(),500,200);
-        addObject(new Pen(),500,40);
+        addObject(new Pen(),300,100);
 
 
-        addObject(new Pizza(),0,350);
-        addObject(new Pizza(),0,200);
-        addObject(new Pizza(),0,40);
-
-        addObject(new jiki() ,300,200);
+        addObject(new jiki() ,300,300);
         
  
         
