@@ -20,37 +20,18 @@ public class side extends enemy
     int delay = 30;
     public void act() 
     {
+    if (Pen.getfin() == 0){    
         
-    if (xflag != 1){
-        if(getX() != 100){setLocation( getX()-2,getY() );}else{xflag = 1;}
-    }
-    
-    if(xflag == 1){
-        rand += 0.03;
-         rot = (45*Math.sin(rand)) + 45;
-        setRotation( (int) (45*Math.sin(rand)) );
-       if (delay == 0 ){
-        delay = 30;
-        getWorld().addObject( new eneball3(), getX(), getY() );
-    }else{
-        delay--;
-    }
+        fase1();
         
-    }
-     Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
-    if( actor != null ){
-        if(hp <= 0){
-            getWorld().removeObject( this );
+        hantei();
 
-        }else{
-            hp--;
-            getWorld().removeObject( actor );
-        }
-        
-    } 
     
     
     
+    }else{
+        getWorld().removeObject( this );
+    }
     
     
     }  
@@ -58,4 +39,38 @@ public class side extends enemy
     static public double getrot(){
         return rot;
     }
+    
+    public void fase1(){
+               if (xflag != 1){
+            if(getX() != 100){setLocation( getX()-2,getY() );}else{xflag = 1;}
+        }
+        
+        if(xflag == 1){
+            rand += 0.03;
+             rot = (45*Math.sin(rand)) + 45;
+            setRotation( (int) (45*Math.sin(rand)) );
+           if (delay == 0 ){
+            delay = 30;
+            getWorld().addObject( new eneball3(), getX(), getY() );
+        }else{
+            delay--;
+        }
+            
+        }
+    }
+    
+    public void hantei(){
+             Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
+        if( actor != null ){
+            if(hp <= 0){
+                getWorld().removeObject( this );
+    
+            }else{
+                hp--;
+                getWorld().removeObject( actor );
+            }
+            
+        } 
+    }
+    
 }

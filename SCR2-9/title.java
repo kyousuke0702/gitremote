@@ -20,7 +20,11 @@ public class title extends World
         
         showText("Push 'space' key",300,180);
         
-        showText("火鉢",300,100);
+        showText("The bee",300,100);
+        
+        showText(" 'z' ショット ",100,180);
+        showText(" 'allow key' 動く ",100,220);
+        showText(" 'shift ' 低速&弾方向固定 ",100,140);
         
     }
     

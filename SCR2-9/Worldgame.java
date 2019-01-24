@@ -25,7 +25,7 @@ public class Worldgame extends World
 
         addObject(new jiki() ,300,300);
         
- 
+        Pen.setfin();
         
     }
     
@@ -40,8 +40,7 @@ public class Worldgame extends World
             showText("",300,100);
         }
   
-
-    
+      
 
     }
 }

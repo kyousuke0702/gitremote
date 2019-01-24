@@ -20,6 +20,7 @@ public class side4 extends enemy
     
     public void act() 
     {
+    if (Pen.getfin() == 0){  
       setRotation( 90);
         if (xflag != 2){
         if (xflag == 0 && getX() != 580){
@@ -47,5 +48,7 @@ public class side4 extends enemy
        setLocation( getX(),jiki.gety());
        getWorld().addObject( new eneball2(), getX(), getY() );
     }
+    }else{getWorld().removeObject( this );}
     }    
+    
 }

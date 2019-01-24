@@ -19,6 +19,7 @@ public class side3 extends enemy
      */
     public void act() 
     {
+        if (Pen.getfin() == 0){ 
         if (xflag != 2){
             if ( getX() != 50){setLocation( getX()-2,getY() );}else{xflag = 1;}
             if ( xflag == 1 && getY() !=300 ){
@@ -62,5 +63,6 @@ public class side3 extends enemy
         }
         
     }
+    }else{getWorld().removeObject( this );}
     }    
 }

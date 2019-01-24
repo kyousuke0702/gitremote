@@ -14,12 +14,16 @@ public class Pen extends enemy
     int bit2 =1;
     int bit3 = 1;
     int bit4 =1;
+    int fin = 0;
+    int delay = 10;
+    static int sfin = 0;
     /**
      * Act - do whatever the Pen wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
+        if (fin == 0){ 
         if(bit != 0){
             getWorld().addObject( new side(), getX(), getY() );
             bit--;
@@ -37,13 +41,14 @@ public class Pen extends enemy
             getWorld().addObject( new side4(), getX(), getY() );
             bit4--;
         }
+      
         
         
     Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
     if( actor != null ){
         if(hp <= 0){
-            getWorld().removeObject( this );
-
+            
+               fin = 1;
         }else{
             hp--;
             getWorld().removeObject( actor );
@@ -59,7 +64,23 @@ public class Pen extends enemy
         for(int i = 0; i <=show;i++ ){
             getWorld().showText("",i*6,10);
         }
-        getWorld().showText("HP:",30,30);
-    }  
-    }    
-}
+        getWorld().showText("HP:",30,30);}
+        
+    }else{
+        getWorld().removeObject( this );
+        sfin = 1;
+        bit = 1;bit4=1;bit2=1;bit3=1;
+    }
+} 
+
+  public static int getfin(){
+  return sfin;
+  }
+  public static int setfin(){
+      sfin = 0;
+  return   sfin;
+  }
+  
+  }  
+  
+

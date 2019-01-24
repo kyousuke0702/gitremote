@@ -20,7 +20,7 @@ public class side2 extends enemy
     int delay = 40;
     public void act() 
     {
-     
+     if (Pen.getfin() == 0){  
          
     if(getX() !=500){setLocation( getX()+2,getY() );}else{xflag = 1;}
             if(xflag == 1){
@@ -49,7 +49,7 @@ public class side2 extends enemy
         }
         
     }  
-    
+    }else{getWorld().removeObject( this );}
 
 }
 

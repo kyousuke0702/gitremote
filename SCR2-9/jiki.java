@@ -69,7 +69,7 @@ public class jiki extends Actor
             setRotation(0);
             move(n);
             if(shift != 0)
-            direction =  direction ;
+            direction =  0 ;
         }
         
         
