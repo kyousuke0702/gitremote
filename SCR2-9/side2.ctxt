@@ -2,5 +2,13 @@
 comment0.params=
 comment0.target=void\ act()
 comment1.params=
-comment1.target=double\ getrot()
-numComments=2
+comment1.target=void\ fase1()
+comment2.params=
+comment2.target=void\ fase2()
+comment3.params=
+comment3.target=void\ sys()
+comment4.params=
+comment4.target=void\ beam()
+comment5.params=
+comment5.target=double\ getrot()
+numComments=6

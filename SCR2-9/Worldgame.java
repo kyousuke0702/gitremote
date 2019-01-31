@@ -14,7 +14,7 @@ public class Worldgame extends World
      * 
      */
     int show = 150;
-    
+    static int fa = 0;
     public Worldgame()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -40,7 +40,7 @@ public class Worldgame extends World
             showText("",300,100);
         }
   
-      
+      if(Pen.shp < 50){fa = 1; }
 
     }
 }

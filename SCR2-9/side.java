@@ -22,12 +22,9 @@ public class side extends enemy
     {
     if (Pen.getfin() == 0){    
         
-        fase1();
-        
+        if (Worldgame.fa == 0)fase1();
+        if (Worldgame.fa == 1)fase2();
         hantei();
-
-    
-    
     
     }else{
         getWorld().removeObject( this );
@@ -51,6 +48,23 @@ public class side extends enemy
             setRotation( (int) (45*Math.sin(rand)) );
            if (delay == 0 ){
             delay = 30;
+            getWorld().addObject( new eneball3(), getX(), getY() );
+        }else{
+            delay--;
+        }
+            
+        }
+    }
+    
+        public void fase2(){
+        double rot2;
+        if(xflag == 1){
+             rot =270 + 182*Math.atan2(jiki.getx() - getX(),-jiki.gety() + getY()) /Math.PI;
+             rot2 = rot;
+             rot += 45 * (1 - 2 *  Math.random());
+            setRotation((int)(-90 +rot2));
+           if (delay == 0 ){
+            delay = 3;
             getWorld().addObject( new eneball3(), getX(), getY() );
         }else{
             delay--;

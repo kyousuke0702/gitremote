@@ -20,8 +20,16 @@ public class side4 extends enemy
     
     public void act() 
     {
-    if (Pen.getfin() == 0){  
-      setRotation( 90);
+        if (Pen.getfin() == 0){  
+            f1();
+            sys();
+        }else{
+            getWorld().removeObject( this );
+        }
+    }   
+    
+    public void f1(){
+          setRotation( 90);
         if (xflag != 2){
         if (xflag == 0 && getX() != 580){
             setLocation( getX()+2,getY() );
@@ -31,7 +39,10 @@ public class side4 extends enemy
             
         }else if (xflag == 1){xflag = 2;}
     }
-    Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
+    }
+    
+    public void sys(){
+            Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
     if( actor != null ){
         if(hp <= 0){
             getWorld().removeObject( this );
@@ -48,7 +59,6 @@ public class side4 extends enemy
        setLocation( getX(),jiki.gety());
        getWorld().addObject( new eneball2(), getX(), getY() );
     }
-    }else{getWorld().removeObject( this );}
-    }    
+}
     
 }

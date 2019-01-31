@@ -18,10 +18,24 @@ public class side2 extends enemy
         static double rand = 0;
     static double rot ;
     int delay = 40;
+    int delay2 = 0;
     public void act() 
     {
      if (Pen.getfin() == 0){  
-         
+
+        if (Worldgame.fa == 0)fase1();
+        if (Worldgame.fa == 1)fase2();
+        sys();
+        
+        
+ 
+    }else
+    {
+        getWorld().removeObject( this );
+    }
+
+}
+    public void fase1(){         
     if(getX() !=500){setLocation( getX()+2,getY() );}else{xflag = 1;}
             if(xflag == 1){
         rand += 0.05;
@@ -35,10 +49,28 @@ public class side2 extends enemy
     }
         
     }
+}
+
+        public void fase2(){
         
-        
-        
-            Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
+        if(xflag == 1){
+    
+            if(delay2 > 60){
+                if(delay2 == 61){getWorld().addObject( new cath(), jiki.getx(), jiki.gety() );}
+               if(delay2 <= 150)beam();
+               if(delay2 >= 160){delay2 = 0;}
+               delay2++;
+            } else{
+               delay2++;
+            rot = 270 + 182*Math.atan2(jiki.getx() - getX(),-jiki.gety() + getY()) /Math.PI;
+            setRotation((int)(-90 +rot));
+            }
+            
+        }
+    }
+    
+    public void sys(){
+               Actor actor = getOneObjectAtOffset( 0, 0, ballet.class );
     if( actor != null ){
         if(hp <= 0){
             getWorld().removeObject( this );
@@ -49,9 +81,17 @@ public class side2 extends enemy
         }
         
     }  
-    }else{getWorld().removeObject( this );}
-
-}
+    }
+    
+    public void beam(){
+              if (delay == 0 ){
+            delay = 1;
+            
+            getWorld().addObject( new enaball4(), getX(), getY() );
+        }else{
+            delay--;
+        }
+    }
 
         static public double getrot(){
         return rot;

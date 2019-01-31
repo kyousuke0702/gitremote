@@ -77,7 +77,7 @@ public class jiki extends Actor
             
             if(balletflag == 0){
                 getWorld().addObject( new ballet(), getX(), getY() );
-                balletflag = 1;
+                balletflag = 0;
             }
            
             

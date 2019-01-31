@@ -22,9 +22,10 @@ public class title extends World
         
         showText("The bee",300,100);
         
+        /*
         showText(" 'z' ショット ",100,180);
         showText(" 'allow key' 動く ",100,220);
-        showText(" 'shift ' 低速&弾方向固定 ",100,140);
+        showText(" 'shift ' 低速&弾方向固定 ",100,140);*/
         
     }
     
